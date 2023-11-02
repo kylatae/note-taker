@@ -30,15 +30,5 @@ notes.delete('/:note_id', (req, res) => {
   readFromFile('./db/db.json', "utf-8", (err, data) => res.json(JSON.parse(data)) )
 })
 
-
-  // readFromFile('./db/db.json', "utf-8", (err, data) => 
-  //     {res.json(JSON.parse(data)) 
-
-  //     const result = data
-  //     console.log(result)
-  //     readAndAppend(newNote, './db/db.json', res.json(`Note added successfully`));
-  //   });
-  // });
-
 module.exports = notes;
 
